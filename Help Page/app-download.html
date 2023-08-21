@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help : App Download</title>
+  </head>
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    .bg-yellow {
+      background-color: #efd080 !important;
+      position: relative;
+      overflow-y: clip;
+    }
+    #app__download .bg-yellow::before {
+      content: "";
+      background-color: #efd080 !important;
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: -100%;
+    }
+
+    #app__download .padding_80_30 {
+      padding: 80px 30px;
+    }
+
+    #app__download .app__slider {
+      color: #23366f !important;
+      overflow: hidden;
+    }
+
+    #app__download .app__slider__item h3 {
+      font-size: 32px;
+      font-weight: normal;
+    }
+
+    #app__download .image__wrapper {
+      display: flex;
+    }
+    #app__download .image__wrapper img {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    #app__download .slider__controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 50px;
+    }
+
+    #app__download .slider__controls .download_arrow {
+      border: none;
+      background: none;
+      color: #2167ae !important;
+      font-family: FontAwesome;
+      font-size: 20px;
+    }
+
+    #app__download .next_btn::after {
+      content: "\f054";
+    }
+    #app__download .prev_btn::after {
+      content: "\f053";
+    }
+
+    #app__download .app_slider__pagination {
+      width: auto;
+      line-height: 0;
+    }
+
+    #app__download .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+      margin: 0 2px;
+    }
+    #app__download .swiper-pagination-bullet-active {
+      background-color: #2167ae !important;
+    }
+  </style>
+  <body>
+    <section id="app__download" class="app__download">
+      <div class="container">
+        <div class="row">
+          <!-- Left Side : Image Section -->
+          <div class="col-md-6 bg-yellow">
+            <img
+              src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/autocillin-mobile-claim-2.png"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Right Side : Slider Section -->
+          <div class="col-md-6 padding_80_30">
+            <div class="app__slider">
+              <div class="app__slider__wrapper swiper-wrapper">
+                <!-- 01 -->
+                <div class="app__slider__item swiper-slide">
+                  <div class="slider__text">
+                    <h3 class="field-headline">Autocillin app Claims</h3>
+                    <p>The ease of the claim reporting process and the selection of partner workshops is in your hands.</p>
+                  </div>
+
+                  <div class="download__links">
+                    <p class="get_app">Get the app at</p>
+                    <div class="image__wrapper">
+                      <a href="https://play.google.com/store/apps/details?id=com.asuransiadira.autocillin">
+                        <img src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-gplay.png" loading="lazy" />
+                      </a>
+
+                      <a href="https://apps.apple.com/id/app/autocillin-id/id919842853?l=id">
+                        <img
+                          src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-appstore.png"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- 02 -->
+                <div class="app__slider__item swiper-slide">
+                  <div class="slider__text">
+                    <h3 class="field-headline">Autocillin app Claims</h3>
+                    <p>The ease of the claim reporting process and the selection of partner workshops is in your hands.</p>
+                  </div>
+
+                  <div class="download__links">
+                    <p class="get_app">Get the app at</p>
+                    <div class="image__wrapper">
+                      <a href="https://play.google.com/store/apps/details?id=com.asuransiadira.autocillin">
+                        <img src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-gplay.png" loading="lazy" />
+                      </a>
+
+                      <a href="https://apps.apple.com/id/app/autocillin-id/id919842853?l=id">
+                        <img
+                          src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-appstore.png"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- 03 -->
+                <div class="app__slider__item swiper-slide">
+                  <div class="slider__text">
+                    <h3 class="field-headline">Autocillin app Claims</h3>
+                    <p>The ease of the claim reporting process and the selection of partner workshops is in your hands.</p>
+                  </div>
+
+                  <div class="download__links">
+                    <p class="get_app">Get the app at</p>
+                    <div class="image__wrapper">
+                      <a href="https://play.google.com/store/apps/details?id=com.asuransiadira.autocillin">
+                        <img src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-gplay.png" loading="lazy" />
+                      </a>
+
+                      <a href="https://apps.apple.com/id/app/autocillin-id/id919842853?l=id">
+                        <img
+                          src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-appstore.png"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- 03 -->
+                <div class="app__slider__item swiper-slide">
+                  <div class="slider__text">
+                    <h3 class="field-headline">Autocillin app Claims</h3>
+                    <p>The ease of the claim reporting process and the selection of partner workshops is in your hands.</p>
+                  </div>
+
+                  <div class="download__links">
+                    <p class="get_app">Get the app at</p>
+                    <div class="image__wrapper">
+                      <a href="https://play.google.com/store/apps/details?id=com.asuransiadira.autocillin">
+                        <img src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-gplay.png" loading="lazy" />
+                      </a>
+
+                      <a href="https://apps.apple.com/id/app/autocillin-id/id919842853?l=id">
+                        <img
+                          src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-appstore.png"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- 04 -->
+                <div class="app__slider__item swiper-slide">
+                  <div class="slider__text">
+                    <h3 class="field-headline">Autocillin app Claims</h3>
+                    <p>The ease of the claim reporting process and the selection of partner workshops is in your hands.</p>
+                  </div>
+
+                  <div class="download__links">
+                    <p class="get_app">Get the app at</p>
+                    <div class="image__wrapper">
+                      <a href="https://play.google.com/store/apps/details?id=com.asuransiadira.autocillin">
+                        <img src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-gplay.png" loading="lazy" />
+                      </a>
+
+                      <a href="https://apps.apple.com/id/app/autocillin-id/id919842853?l=id">
+                        <img
+                          src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-appstore.png"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- 05 -->
+                <div class="app__slider__item swiper-slide">
+                  <div class="slider__text">
+                    <h3 class="field-headline">Autocillin app Claims</h3>
+                    <p>The ease of the claim reporting process and the selection of partner workshops is in your hands.</p>
+                  </div>
+
+                  <div class="download__links">
+                    <p class="get_app">Get the app at</p>
+                    <div class="image__wrapper">
+                      <a href="https://play.google.com/store/apps/details?id=com.asuransiadira.autocillin">
+                        <img src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-gplay.png" loading="lazy" />
+                      </a>
+
+                      <a href="https://apps.apple.com/id/app/autocillin-id/id919842853?l=id">
+                        <img
+                          src="https://phpstack-543976-3777276.cloudwaysapps.com/assets/image/btn-appstore.png"
+                          loading="lazy"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider__controls">
+              <button class="download_arrow prev_btn"></button>
+              <div class="app_slider__pagination"></div>
+              <button class="download_arrow next_btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".app__slider", {
+        navigation: {
+          nextEl: ".app__download .next_btn",
+          prevEl: ".app__download .prev_btn",
+        },
+        pagination: {
+          el: ".app_slider__pagination",
+        },
+        loop: true,
+      });
+
+      const name = document.querySelector(".app__download next_btn");
+    </script>
+  </body>
+</html>
