@@ -1,0 +1,231 @@
+.blog-search-results .search-result-list>li {
+	position: relative;
+	width: 50%;
+	float: left;
+	height: auto;
+	padding: 15px;
+}
+
+.search-results-count{
+	display: none;
+}
+
+.teaser--wrapper{
+
+}
+
+
+.container>.component-content>.row{
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+}
+
+.row .teaser:nth-child(2) {
+	background: red !important;
+}
+
+.teaserCostume0{
+	grid-column-start: 1;
+	grid-column-end: line3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.teaserCostume1{
+	grid-column-start: line3;
+	grid-column-end: end;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+.teaserCostume2{
+	grid-column-start: line3;
+	grid-column-end: line4;
+	grid-row-start: 2;
+	grid-row-end: 2;
+}
+
+.teaserCostume3{
+	grid-column-start: line4;
+	grid-column-end: end;
+	grid-row-start: 2;
+	grid-row-end: 2;
+}
+
+.teaserCostume4{
+	grid-column-start: line3;
+	grid-column-end: line4;
+	grid-row-start: 3;
+	grid-row-end: 3;
+}
+
+.teaserCostume5{
+	grid-column-start: line4;
+	grid-column-end: end;
+	grid-row-start: 3;
+	grid-row-end: 3;
+}
+
+.teaserCostumeRow{
+	/*display: block;*/
+	display: grid;
+	grid-template-columns: [line1] 25% [line2] 25% [line3] 25% [line4] 25%[end];
+	grid-template-rows: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.teaserCostumeRowP{
+    position: relative;
+    overflow-x: unset;
+    overflow-y: clip;
+	margin: 0px -15px;
+	margin-bottom: 40px;
+}
+
+.teaserCostumeRow div{
+	max-width: 100%;
+	width: 100%;
+	display: grid;
+}
+
+.teaserCostumeRow > div > .component{
+	margin-bottom: unset !important;
+}
+
+.teaserCostume0 figure, .teaserCostume0 .component-content{
+	max-height: 100%;
+	/*height: 493px;*/
+}
+
+.teaserCostume0 figure img, .teaserCostume0 .component-content img{
+	height: 493px !important;
+	object-fit: cover;
+}
+
+.teaserCostume1 .teaser--wrapper .teaser-image__circle img{
+	height: 200px !important;
+}
+
+.teaser.teaser--card{
+	margin-bottom: 20px !important;
+}
+
+.teaser.bubbles .teaser__content p{
+	margin: unset;
+}
+.teaserCostume1 .teaser--wrapper a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.teaserCostume1 .teaser--wrapper .teaser--media{
+	flex: 0 0 50%;
+	margin-bottom: unset;
+}
+
+@media (max-width: 1199px){
+	.teaserCostume0 figure, .teaserCostume0 .component-content{
+		max-height: 100% !important;
+	}
+
+	.teaserCostume0 figure img, .teaserCostume0 .component-content img{
+		height: 100% !important;
+		object-fit: cover;
+	}
+	.teaserCostume1 .teaser--wrapper .teaser-image__circle img{
+		height: 200px !important;
+	}
+
+}
+
+@media (max-width: 991px){
+	.teaserCostume0 figure, .teaserCostume0 .component-content{
+		max-height: 451px !important;
+	}
+
+	.teaserCostume0 figure img, .teaserCostume0 .component-content img{
+		height: 320px !important;
+		object-fit: cover;
+	}
+
+	.teaser.bubbles .teaser--media {
+		margin: 0px auto 24px
+	}
+
+	.teaserCostume1 .teaser--wrapper a{
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	}
+	.teaserCostume1 .teaser--wrapper .teaser--media{
+		flex: 0 0 100%;
+		margin-bottom: 25px;
+	}
+}
+
+.teaserCostume1{
+	/*display: flex;
+	flex-direction: row !important;*/
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%
+}
+.teaserCostume1 img, .teaserCostume1 img{
+	margin-bottom: -10px;
+}
+
+.informasi_pilihan{
+	margin-left: -15px;
+}
+@media(max-width: 767px) {
+	.teaserCostume0 figure, .teaserCostume0 .component-content{
+		max-height: auto !important;
+	}
+
+	.teaserCostume0 figure img, .teaserCostume0 .component-content img{
+		height: 200px !important;
+		object-fit: cover;
+	}
+	.nameSearch{
+		margin-left:15px;
+	}
+
+
+	.teaserCostume0{
+		margin: 0px;
+		width: calc(100% );
+	}
+
+	.teaserCostume0 figure img{
+		height: auto !important;
+		object-fit: cover;
+	}
+
+	.blog-search-results .search-result-list>li {
+		position: relative;
+		width: 100%;
+		float: left;
+		height: auto;
+		padding: 15px;
+	}
+
+	.teaserCostumeRowP{
+		margin: unset;
+	}
+
+	.teaserCostume0,.teaserCostume1,.teaserCostume2,.teaserCostume3,.teaserCostume4,.teaserCostume5{
+		grid-column-start: 1;
+		grid-column-end: end;
+		grid-row-start: auto;
+		grid-row-end: auto;
+		/*margin: 0px -15px;*/
+		max-width: calc(100%) !important;
+		width: calc(100%) !important;
+	}
+
+	.container>.component-content>.row{
+	    margin-right: 0px !important;
+	    margin-left: 0px !important;
+	}
+}

@@ -1,0 +1,235 @@
+#content > div:first-child{
+	display: none;
+}
+#content > div:nth-child(2) {
+	display: none;
+}
+
+main .col-md-8.offset-md-2{
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-left: unset;
+}
+
+main .title{
+	margin-left: unset;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-left: unset;
+}
+main .breadcrumb nav{
+	padding-left: 0px !important;
+}
+
+main .breadcrumb ol li a{
+	font-size: 16px !important;
+}
+
+main .title{
+	display: grid;
+	grid-template-columns: [line1] 20% [line2] 20% [line3] 20% [line4] 20% [line5] 20%[end];
+	grid-template-rows: auto;
+}
+
+main .title .field-title, main .title h2{
+	margin-bottom: 24px !important;
+}
+
+
+main .title .mod-share-bar{
+	margin-bottom: unset;
+}
+
+main .title [class*="col-"]{
+	padding: unset;
+}
+main .title [class*="col-"] .component-content ul{
+	flex: 0 0 100%;
+	width: 100%;
+}
+
+main .title nav{
+	grid-column-start: line1;
+	grid-column-end: line4;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	display: grid;
+	margin-bottom: 24px;
+}
+
+main .title > div:nth-child(2){
+	grid-column-start: line1;
+	grid-column-end: line4;
+	grid-row-start: auto;
+	grid-row-end: auto;
+	margin-bottom: 8px;
+}
+main .title > div:nth-child(3){
+	grid-column-start: line1;
+	grid-column-end: line4;
+	grid-row-start: auto;
+	grid-row-end: auto;
+	margin-bottom: 32px;
+}
+
+main .title > div:nth-child(3) div.component-content div{
+	display: flex;
+	flex-direction: column;
+}
+main .title > div:nth-child(3) div.component-content p{
+	order: 2;
+	font-size: 14px;
+}
+
+main .title > div:nth-child(3) div.component-content p a{
+	border-radius: 12px;
+	background: var(--secondary-azure-azure-main, #4870C6);
+	color: white !important;
+	text-decoration: unset !important;
+	padding: 4px 16px;
+	padding-right: 16px !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 675;
+	line-height: 20px;
+	margin-right: 16px;
+}
+
+main .title > div:nth-child(3) div.component-content h2{
+	order: 1;
+}
+main .title > div:nth-child(4){
+	grid-column-start: line1;
+	grid-column-end: line4;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+main .title img{
+	grid-column-start: line4;
+	grid-column-end: end;
+	grid-row-start: 1;
+	grid-row-end: 5;
+
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+	width: calc(100% + 50px);
+	object-fit: cover;
+	position: relative;
+	top: -50px;
+}
+
+.article-page .selected-article .search-result-list{
+	padding-bottom: 10px;
+}
+
+@media (max-width: 1199px){
+
+
+}
+
+#circle-large{
+	bottom: -6vh;
+}
+
+
+@media (max-width: 991px){
+	.title h1, .title .field-title{
+		font-size: 36px !important;
+	}
+	.title h2{
+		font-size: 20px !important;
+	}
+
+
+	main .title nav{
+		grid-column-start: line1;
+		grid-column-end: line4;
+		grid-row-start: 1;
+		grid-row-end: 1;
+		display: grid;
+	}
+
+	main .title > div:nth-child(2){
+		grid-column-start: line1;
+		grid-column-end: line4;
+		grid-row-start: auto;
+		grid-row-end: auto;
+	}
+	main .title > div:nth-child(3){
+		grid-column-start: line1;
+		grid-column-end: line4;
+		grid-row-start: auto;
+		grid-row-end: auto;
+	}
+	main .title > div:nth-child(4){
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: 4;
+		grid-row-end: 5;
+	}
+	main .title img{
+		grid-column-start: line4;
+		grid-column-end: end;
+		grid-row-start: 1;
+		grid-row-end: 4;
+	}
+}
+
+
+@media(max-width: 767px) {
+
+	main .title nav{
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: auto;
+		grid-row-end: auto;
+		display: grid;
+	}
+
+	main .title > div:nth-child(2){
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: auto;
+		grid-row-end: auto;
+	}
+	main .title > div:nth-child(3){
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: auto;
+		grid-row-end: auto;
+	}
+	main .title > div:nth-child(4){
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: auto;
+		grid-row-end: auto;
+	}
+	main .title img{
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		width: calc(100%);
+		top: unset;
+		margin-top: -50px;
+	}
+
+	main .title{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.article-page .highlight{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	main div[class*="col-"]{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+}

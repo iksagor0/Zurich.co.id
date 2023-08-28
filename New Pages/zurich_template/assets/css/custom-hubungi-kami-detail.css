@@ -1,0 +1,134 @@
+#circle-xxlarge{
+	bottom: unset;
+	top: -40vh;
+	left: -25vw;
+	background: var(--primary-sky-blue-aa);
+}
+#content > .component.container{
+	position: relative;
+}
+
+@media(max-width: 767px) {
+	#circle-xxlarge {
+		left: -75vw;
+		width: 250vw;
+		top: -45vh;
+	}
+	#content{
+		overflow: hidden;
+		position: relative;
+	}
+	.mt-250{
+		margin-top: 25px;
+	}
+}
+.card-company{
+	margin-bottom: 110px;
+}
+
+.banner-static-grid{
+	display: grid;
+	grid-template-columns: [line1] 20% [line2] 20% [line3] 30% [line4] 15% [line5] 15%[end];
+	grid-template-rows: 50px auto;
+}
+.banner-static-grid .static-text{
+	grid-column-start: line1;
+	grid-column-end: line4;
+	grid-row-start: 2;
+	display: grid;
+}
+.banner-static-grid .static-category{
+	grid-column-start: line1;
+	grid-column-end: line4;
+	grid-row-start: 3;
+	display: grid;
+}
+.banner-static-grid .static-callnumber{
+	grid-column-start: line1;
+	grid-column-end: line4;
+	grid-row-start: 3;
+	display: none;
+}
+.banner-static-grid .static-images{
+	grid-column-start: line4;
+	grid-column-end: end;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	display: grid;
+}
+
+.banner-static-grid .static-text h2{
+	/*font-family: Ogg;*/
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 57px;
+	color: white;
+}
+.mside {
+    margin: 0px -15px;
+    width: calc(100% + 30px);
+}
+
+.banner-static-grid .static-images .slide-decoration img{
+	width: 80%;
+}
+@media (max-width: 991px){
+	.banner-static-grid .static-text{
+		grid-column-start: line1;
+		grid-column-end: line4;
+		grid-row-start: 2;
+		display: grid;
+	}
+	.banner-static-grid .static-callnumber{
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: 3;
+		display: grid;
+	}
+	.banner-static-grid .static-category{
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: 4;
+		display: grid;
+	}
+	.banner-static-grid .static-images{
+		grid-column-start: line4;
+		grid-column-end: end;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		display: grid;
+	}
+}
+
+@media(max-width: 767px) {
+	.banner-static-grid .static-images{
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+	.banner-static-grid .static-text{
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	.banner-static-grid .static-callnumber{
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: 4;
+		grid-row-end: 5;
+	}
+	.banner-static-grid .static-category{
+		grid-column-start: line1;
+		grid-column-end: end;
+		grid-row-start: 5;
+		grid-row-end: 6;
+	}
+	.search-category p{
+		flex: 1;
+		margin: unset;
+		margin-bottom: 15px;
+	}
+}

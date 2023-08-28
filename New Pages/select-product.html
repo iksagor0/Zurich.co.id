@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      /* Remove this body and .container CSS  */
+      body {
+        background: #1393d1;
+        color: #fff;
+      }
+      .container {
+        width: 92%;
+        max-width: 1160px;
+        margin: 20px auto;
+      }
+
+      /* Main CSS */
+      #form {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        margin-bottom: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        user-select: none;
+        gap: 0 10px;
+      }
+
+      #form p {
+        flex: 0 0 100%;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 375;
+        line-height: 30px;
+        margin-bottom: 24px;
+        color: white;
+        margin: 0px 15px;
+      }
+      #form .dropdown__wrapper {
+        position: relative;
+        flex: 1;
+        margin: 0px 15px;
+        border-bottom: 1px solid #91bfe3;
+      }
+
+      #form .dropdown-menu li,
+      #form .select-arrow-active {
+        font-size: 20px;
+        padding: 10px 0;
+        cursor: pointer;
+      }
+
+      #form .dropdown-menu li {
+        background-color: rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        padding: 10px;
+      }
+
+      #form ul.dropdown-menu {
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        background: #fff;
+        color: #2167ae;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        z-index: 99;
+        border-radius: 0px 0px 16px 16px;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 5px 0px rgba(0, 0, 0, 0.05),
+          0px 1px 10px 0px rgba(0, 0, 0, 0.03);
+        overflow: hidden;
+      }
+
+      #form .select-arrow-active {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #form .select-arrow-active::after {
+        content: "\f078";
+        font-family: FontAwesome;
+        opacity: 0.8;
+      }
+
+      #form .select-arrow-active.active__select::after {
+        content: "\f077";
+      }
+
+      .product-form-button {
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 20px;
+        color: #23366f;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      /* Functionality */
+      .dropdown__wrapper select,
+      .dropdown__wrapper,
+      .dropdown-menu {
+        display: none;
+      }
+
+      .active-product-dropdown,
+      .product__category-category {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="form">
+        <p class="product-form__para">Untuk informasi bantuan lebih lengkap pilih produk yang sesuai</p>
+
+        <!-- ******** Product Category ******** -->
+        <div class="product__category-category dropdown__wrapper">
+          <select class="product__category-item" id="productCategoryList">
+            <option value="" selected>Select Product Category</option>
+            <option value="Vehicle Protection">Vehicle Protection</option>
+            <option value="Health Insurance">Health Insurance</option>
+            <option value="Future Investment">Future Investment</option>
+            <option value="Property Assets">Property Assets</option>
+            <option value="Business Security">Business Security</option>
+            <option value="Travel Convenience">Travel Convenience</option>
+            <option value="Life Guarantee">Life Guarantee</option>
+            <option value="Additional Protection">Additional Protection</option>
+            <option value="Sharia Protection">Sharia Protection</option>
+          </select>
+
+          <div class="product__category-arrow-active select-arrow-active">Select Product Category</div>
+          <ul class="dropdown-menu" style="display: none">
+            <li>Vehicle Protection</li>
+            <li>Health Insurance</li>
+            <li>Future Investment</li>
+            <li>Property Assets</li>
+            <li>Business Security</li>
+            <li>Travel Convenience</li>
+            <li>Life Guarantee</li>
+            <li>Additional Protection</li>
+            <li>Sharia Protection</li>
+          </ul>
+        </div>
+
+        <!-- ******** Product List ******** -->
+        <!-- Blank -->
+        <div class="product__custom-select dropdown__wrapper active-product-dropdown" data-dropdown="">
+          <select class="product__custom-item">
+            <option value="" selected>Select Product</option>
+            <option value="Machine">Machine</option>
+          </select>
+
+          <div class="select-arrow-active">Select Product</div>
+
+          <ul class="dropdown-menu" style="display: none">
+            <li>Machine</li>
+          </ul>
+        </div>
+
+        <!-- Vehicle Protection -->
+        <div class="product__custom-select dropdown__wrapper" data-dropdown="Vehicle Protection">
+          <select class="product__custom-item">
+            <option value="" selected>Select Product</option>
+            <option value="Critical Protection">Critical Protection</option>
+            <option value="Optimal Health Guarantee">Optimal Health Guarantee</option>
+            <option value="Medicillin">Medicillin</option>
+            <option value="Critical Principals">Critical Principals</option>
+          </select>
+
+          <div class="select-arrow-active">Select Product</div>
+
+          <ul class="dropdown-menu" style="display: none">
+            <li>Critical Protection</li>
+            <li>Optimal Health Guarantee</li>
+            <li>Medicillin</li>
+            <li>Critical Principals</li>
+          </ul>
+        </div>
+
+        <!-- Health insurance -->
+        <div class="product__custom-select dropdown__wrapper" data-dropdown="Health Insurance">
+          <select class="product__custom-item">
+            <option value="" selected>Select Product</option>
+            <option value="Critical Protection">Critical Protection</option>
+            <option value="Critical Principals">Critical Principals</option>
+          </select>
+
+          <div class="select-arrow-active">Select Product</div>
+
+          <ul class="dropdown-menu" style="display: none">
+            <li>Critical Protection</li>
+            <li>Critical Principals</li>
+          </ul>
+        </div>
+
+        <!-- Future Investment -->
+        <div class="product__custom-select dropdown__wrapper" data-dropdown="Future Investment">
+          <select class="product__custom-item">
+            <option value="" selected>Select Product</option>
+            <option value="Optimal Health Guarantee">Optimal Health Guarantee</option>
+            <option value="Medicillin">Medicillin</option>
+            <option value="Critical Principals">Critical Principals</option>
+          </select>
+
+          <div class="select-arrow-active">Select Product</div>
+
+          <ul class="dropdown-menu" style="display: none">
+            <li>Optimal Health Guarantee</li>
+            <li>Medicillin</li>
+            <li>Critical Principals</li>
+          </ul>
+        </div>
+
+        <!-- ******** Button ******** -->
+        <a href="" class="product-form-button">View Guide</a>
+      </form>
+    </div>
+
+    <!-- ************************************************ -->
+    <!--                         JS                       -->
+    <!-- ************************************************ -->
+    <script>
+      const dropdownWrappers = document.querySelectorAll(".dropdown__wrapper");
+
+      dropdownWrappers.forEach((dropdownWrapper) => {
+        const selectedOption = dropdownWrapper.querySelector(".select-arrow-active");
+        const selectItems = dropdownWrapper.querySelector("ul");
+        const options = selectItems.querySelectorAll("li");
+
+        // toggling the dropdown
+        selectedOption.addEventListener("click", () => {
+          selectItems.style.display = selectItems.style.display === "none" ? "block" : "none";
+          selectedOption.classList.toggle("active__select");
+        });
+
+        // Update value and display functionality
+        options.forEach((option) => {
+          option.addEventListener("click", () => {
+            selectedOption.textContent = option.textContent;
+            dropdownWrapper.querySelector("select").value = option.textContent;
+            selectItems.style.display = "none";
+            selectedOption.classList.remove("active__select");
+
+            // show product dropdown functionality
+            const activeCategoryValue = document.querySelector("#productCategoryList").value;
+
+            const productDropdownWrappers = document.querySelectorAll(".product__custom-select.dropdown__wrapper");
+            productDropdownWrappers.forEach((proDropdown) => {
+              const isCategoryMatched = proDropdown.getAttribute("data-dropdown") === activeCategoryValue;
+              if (isCategoryMatched) proDropdown.classList.add("active-product-dropdown");
+              else proDropdown.classList.remove("active-product-dropdown");
+            });
+          });
+        });
+      });
+
+      // click outside of "ul.dropdown-menu" display none
+      document.addEventListener("click", (event) => {
+        dropdownWrappers.forEach((dropdownWrapper) => {
+          const selectItems = dropdownWrapper.querySelector("ul");
+          const isClickInsideDropdown = dropdownWrapper.contains(event.target);
+
+          if (!isClickInsideDropdown) {
+            selectItems.style.display = "none";
+            const selectedOption = dropdownWrapper.querySelector(".select-arrow-active");
+            selectedOption.classList.remove("active__select");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<!-- if "dropdown-menu" display block then it's sibling "#form .select-arrow-active::after" content should be "\f077"; -->
