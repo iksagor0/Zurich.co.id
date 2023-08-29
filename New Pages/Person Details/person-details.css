@@ -1,0 +1,170 @@
+      :root {
+          --primary-zurich-blue: #2167ae;
+          --primary-light-blue: #91bfe3;
+          --primary-sky-blue-aa: #1393d1;
+          --secondary-azure-azure-main: #4870c6;
+          --zurich-blue: #1393d1;
+          --zurich-yellow: #efd080;
+          --gray-white-100: #fff;
+      }
+
+      .card-company {
+          border-radius: 16px;
+          background: var(--gray-white-100);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+          padding: 24px;
+      }
+
+      .text-cst1 {
+          color: var(--gray-white-100);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 375;
+          line-height: 30px;
+      }
+
+      .card-company .name-company {
+          display: flex;
+          border-bottom: 1px solid var(--primary-zurich-blue);
+          padding-bottom: 30px;
+      }
+
+      .card-company .name-company .img {
+          width: 190px;
+          height: 190px;
+          background: gainsboro;
+          border-radius: 18.37px;
+          flex: 0 0 190px;
+          overflow: hidden;
+      }
+
+      .card-company .name-company .img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+
+      .card-company .name-company .desc {
+          padding-left: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex: 1;
+      }
+
+      .card-company .name-company .desc h4 {
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 375;
+          line-height: 39px;
+          margin-bottom: 16px;
+      }
+
+      .card-company .name-company .desc div {
+          display: flex;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 375;
+          line-height: 24px;
+          align-items: flex-end;
+      }
+
+      .card-company .name-company .desc h5 {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 375;
+          line-height: 24px;
+          flex: 1;
+      }
+
+      .card-company .name-company .desc p {
+          margin-left: 30px;
+      }
+
+      .card-company .name-company .desc p span,
+      .card-company .service-company .desc p span {
+          margin-right: 8px;
+      }
+
+      .card-company .name-company .desc h5,
+      .card-company .name-company .desc p {
+          margin-bottom: unset;
+      }
+
+      .card-company .service-company {
+          display: grid;
+          /*flex-direction: column;*/
+          padding-top: 30px;
+
+          display: grid;
+          grid-template-columns: [line1] 190px [line2] calc(100% - 190px) [end];
+          grid-template-rows: auto;
+      }
+
+      .card-company .service-company h4 {
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 375;
+          line-height: 39px;
+          margin-bottom: 0px;
+
+          grid-column-start: line1;
+          grid-column-end: end;
+          grid-row-start: auto;
+          display: grid;
+      }
+
+      .card-company .service-company>p {
+          /*font-family: Zurich Sans;*/
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 475;
+          line-height: 18px;
+
+          grid-column-start: line1;
+          grid-column-end: end;
+          grid-row-start: auto;
+          display: grid;
+      }
+
+      .card-company .service-company .grid {
+          grid-column-start: line1;
+          grid-column-end: end;
+          grid-row-start: auto;
+          display: grid;
+      }
+
+      .card-company .service-company .desc {
+          display: flex;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 375;
+          line-height: 24px;
+          align-items: flex-end;
+      }
+
+      .card-company .service-company .desc h5 {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 375;
+          line-height: 24px;
+      }
+
+      .card-company .service-company .desc p {
+          margin-left: 30px;
+      }
+
+      .card-company .service-company .desc h5,
+      .card-company .service-company .desc p {
+          margin-bottom: unset;
+      }
+
+      .icon {
+          font-size: 18px;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 1;
+          width: 22px;
+          height: 22px;
+          text-align: center;
+      }
