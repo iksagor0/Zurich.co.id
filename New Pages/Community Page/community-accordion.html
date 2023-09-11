@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>community-accordion</title>
+  </head>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    * {
+      margin: 0;
+    }
+    body {
+      margin: 20px 0 !important;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1160px;
+      margin: auto;
+    }
+
+    /* Main Css start from here */
+    .community__accordion {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      gap: 30px;
+    }
+
+    .community__accordion .accordion__item {
+      color: blue;
+      padding: 20px 0;
+      border-top: 1px solid blue;
+      border-bottom: 1px solid blue;
+      user-select: none;
+    }
+
+    .community__accordion .accordion__item h3 {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .community__accordion .accordion__item h3::after {
+      content: "\f107";
+      font-family: FontAwesome;
+      transition: 0.3s;
+    }
+
+    .community__accordion .accordion__item p {
+      display: none;
+      margin: 10px 0 0;
+      color: #000;
+    }
+
+    .community__accordion .accordion__item.open_accordion h3::after {
+      transform: rotate(180deg);
+    }
+
+    .community__accordion .accordion__item.open_accordion p {
+      display: block;
+    }
+
+    @media screen and (max-width: 991px) {
+      .community__accordion {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <section class="community__accordion">
+        <div class="heading__area">
+          <h2>Perlindungan yang Anda Peroleh</h2>
+          <p>Berikut detail perlindungan yang Anda dapatkan dari Autocillin.</p>
+        </div>
+
+        <div class="accordion__wrapper">
+          <!-- 01 -->
+          <div class="accordion__item">
+            <h3>Penggantian Mobil Baru</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum odio repellendus voluptates veniam vel. Laboriosam
+              vitae aliquam temporibus ducimus nostrum.
+            </p>
+          </div>
+
+          <!-- 02 -->
+          <div class="accordion__item">
+            <h3>Ganti Rugi Barang Pribadi</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum odio repellendus voluptates veniam vel. Laboriosam
+              vitae aliquam temporibus ducimus nostrum.
+            </p>
+          </div>
+
+          <!-- 03 -->
+          <div class="accordion__item">
+            <h3>Biaya Sewa Kendaraan/Transportasi</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum odio repellendus voluptates veniam vel. Laboriosam
+              vitae aliquam temporibus ducimus nostrum.
+            </p>
+          </div>
+
+          <!-- 04 -->
+          <div class="accordion__item">
+            <h3>Jasa Perpanjangan STNK</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum odio repellendus voluptates veniam vel. Laboriosam
+              vitae aliquam temporibus ducimus nostrum.
+            </p>
+          </div>
+
+          <!-- 05 -->
+          <div class="accordion__item">
+            <h3>Bengkel Rekanan Asuransi Autocillin</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum odio repellendus voluptates veniam vel. Laboriosam
+              vitae aliquam temporibus ducimus nostrum.
+            </p>
+          </div>
+
+          <!-- 06 -->
+          <div class="accordion__item">
+            <h3>Bantuan Darurat Autocillin (Autocillin Rescue)</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum odio repellendus voluptates veniam vel. Laboriosam
+              vitae aliquam temporibus ducimus nostrum.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const accordionItems = document.querySelectorAll(".community__accordion .accordion__item");
+
+      accordionItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("open_accordion");
+        });
+      });
+    </script>
+  </body>
+</html>
