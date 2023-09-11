@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        background: blue;
+      }
+      .container {
+        width: 100%;
+        max-width: 1160px;
+        margin: auto;
+      }
+
+      /* Main css from here */
+      .community_menu__slider__wrapper {
+        overflow: hidden;
+        padding: 30px 50px;
+        border-radius: 20px;
+        background: #fff;
+      }
+
+      .community_menu__slider {
+        width: 100%;
+      }
+
+      .community_menu__slider .community_item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .community_menu__slider .community_item .item {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        user-select: none;
+      }
+      .community_menu__slider .community_item .item img {
+        width: 60px;
+        min-width: 60px;
+        aspect-ratio: 1/1;
+      }
+
+      .community__slider-pagination {
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      .swiper-pagination-clickable .swiper-pagination-bullet {
+        background: #fff;
+        opacity: 0.4;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #fff;
+        opacity: 1 !important;
+      }
+
+      @media screen and (max-width: 991px) {
+        .community_menu__slider .community_item {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="community_menu__slider__wrapper">
+        <div class="swiper community_menu__slider">
+          <div class="swiper-wrapper">
+            <!-- 01 -->
+            <div class="swiper-slide community_item">
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Kecelakaan Diri untuk Pengemudi</h3>
+                  <p>Jaminan ganti rugi untuk kecelakaan yang menyebabkan kematian dan cacat tetap.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Kecelakaan Diri untuk Pengemudi</h3>
+                  <p>Jaminan ganti rugi untuk kecelakaan yang menyebabkan kematian dan cacat tetap.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Bencana Alam & Kerusuha</h3>
+                  <p>Jaminan ganti rugi terhadap kerugian akibat bencana alam dan kerusuhan.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Bencana Alam & Kerusuha</h3>
+                  <p>Jaminan ganti rugi terhadap kerugian akibat bencana alam dan kerusuhan.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Tanggung Jawab Hukum Terhadap Pihak Ketiga</h3>
+                  <p>Jaminan ganti rugi terhadap mobil yang</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Tanggung Jawab Hukum Terhadap Pihak Ketiga</h3>
+                  <p>disebabkan oleh tuntutan pihak ketiga.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="swiper-slide community_item">
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Kecelakaan Diri untuk Pengemudi</h3>
+                  <p>Jaminan ganti rugi untuk kecelakaan yang menyebabkan kematian dan cacat tetap.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Kecelakaan Diri untuk Pengemudi</h3>
+                  <p>Jaminan ganti rugi untuk kecelakaan yang menyebabkan kematian dan cacat tetap.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Bencana Alam & Kerusuha</h3>
+                  <p>Jaminan ganti rugi terhadap kerugian akibat bencana alam dan kerusuhan.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Bencana Alam & Kerusuha</h3>
+                  <p>Jaminan ganti rugi terhadap kerugian akibat bencana alam dan kerusuhan.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Tanggung Jawab Hukum Terhadap Pihak Ketiga</h3>
+                  <p>Jaminan ganti rugi terhadap mobil yang</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Tanggung Jawab Hukum Terhadap Pihak Ketiga</h3>
+                  <p>disebabkan oleh tuntutan pihak ketiga.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="swiper-slide community_item">
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Kecelakaan Diri untuk Pengemudi</h3>
+                  <p>Jaminan ganti rugi untuk kecelakaan yang menyebabkan kematian dan cacat tetap.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Kecelakaan Diri untuk Pengemudi</h3>
+                  <p>Jaminan ganti rugi untuk kecelakaan yang menyebabkan kematian dan cacat tetap.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Bencana Alam & Kerusuha</h3>
+                  <p>Jaminan ganti rugi terhadap kerugian akibat bencana alam dan kerusuhan.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Bencana Alam & Kerusuha</h3>
+                  <p>Jaminan ganti rugi terhadap kerugian akibat bencana alam dan kerusuhan.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Tanggung Jawab Hukum Terhadap Pihak Ketiga</h3>
+                  <p>Jaminan ganti rugi terhadap mobil yang</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Tanggung Jawab Hukum Terhadap Pihak Ketiga</h3>
+                  <p>disebabkan oleh tuntutan pihak ketiga.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="swiper-slide community_item">
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Kecelakaan Diri untuk Pengemudi</h3>
+                  <p>Jaminan ganti rugi untuk kecelakaan yang menyebabkan kematian dan cacat tetap.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Kecelakaan Diri untuk Pengemudi</h3>
+                  <p>Jaminan ganti rugi untuk kecelakaan yang menyebabkan kematian dan cacat tetap.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Bencana Alam & Kerusuha</h3>
+                  <p>Jaminan ganti rugi terhadap kerugian akibat bencana alam dan kerusuhan.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Bencana Alam & Kerusuha</h3>
+                  <p>Jaminan ganti rugi terhadap kerugian akibat bencana alam dan kerusuhan.</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+                <div class="text__wrapper">
+                  <h3>Tanggung Jawab Hukum Terhadap Pihak Ketiga</h3>
+                  <p>Jaminan ganti rugi terhadap mobil yang</p>
+                </div>
+              </div>
+
+              <!-- item -->
+              <div class="item">
+                <img src="./zurich.png" alt="zurich" />
+
+                <div class="text__wrapper">
+                  <h3>Tanggung Jawab Hukum Terhadap Pihak Ketiga</h3>
+                  <p>disebabkan oleh tuntutan pihak ketiga.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="community__slider-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize community_menu__slider  -->
+    <script>
+      var communityMenuSlider = new Swiper(".community_menu__slider", {
+        pagination: {
+          el: ".community__slider-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
