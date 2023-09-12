@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>community-accordion</title>
+  </head>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    * {
+      margin: 0;
+    }
+    body {
+      margin: 20px 0 !important;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1160px;
+      margin: auto;
+    }
+
+    /* Main css from here */
+    .community__features table {
+      width: 100%;
+      gap: 0;
+      border-collapse: collapse;
+    }
+
+    .community__features thead th {
+      padding: 20px 0;
+      font-weight: bold;
+    }
+
+    .community__features td {
+      text-align: center;
+      border-top: 1px solid blue;
+      border-bottom: 1px solid blue;
+      padding: 20px 0;
+    }
+
+    .community__features td:first-child {
+      text-align: left;
+    }
+
+    .community__features td .fa-check {
+      color: green;
+    }
+
+    .community__features td .fa-xmark {
+      color: red;
+    }
+
+    /* Main Css start from here */
+  </style>
+  <body>
+    <div class="container">
+      <section class="community__features">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Autocillin</th>
+              <th>Mikro Mobil</th>
+              <th>Mobil Mikro Syariah</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <h4>Limit asuransi</h4>
+                <p>Limit asuransi</p>
+              </td>
+
+              <td>hingga 100 juta rupiah</td>
+              <td>Optional</td>
+              <td>Optional</td>
+            </tr>
+
+            <tr>
+              <td>
+                <h4>Minimum premi</h4>
+                <p>Minimum premi untuk perlindungan kendaraan</p>
+              </td>
+
+              <td>Rp 500.000</td>
+              <td>Optional</td>
+              <td>Optional</td>
+            </tr>
+
+            <tr>
+              <td>
+                <h4>Jumlah bengkel</h4>
+                <p>Jumlah bengkel yang menerima klaim di seluruh Indonesia</p>
+              </td>
+
+              <td>150 bengke</td>
+              <td>Optional</td>
+              <td>Optional</td>
+            </tr>
+
+            <tr>
+              <td>
+                <h4>List item title</h4>
+                <p>Text description</p>
+              </td>
+
+              <td><i class="fa-solid fa-check"></i></td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+            </tr>
+
+            <tr>
+              <td>
+                <h4>Berdasarkan syariah</h4>
+                <p>Text description</p>
+              </td>
+
+              <td><i class="fa-solid fa-xmark"></i></td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+              <td><i class="fa-solid fa-check"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>
