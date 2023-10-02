@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mapouter" style="max-width: 600px">
+      <div class="gmap_canvas">
+        <iframe
+          class="gmap_iframe"
+          width="100%"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=550&amp;height=520&amp;hl=en&amp;q=Graha Zurich&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe
+        ><a href="https://connectionsgame.org/">Connections NYT</a>
+      </div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          width: 100%;
+          height: 520px;
+        }
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          width: 100%;
+          height: 520px;
+        }
+        .gmap_iframe {
+          height: 520px !important;
+        }
+      </style>
+    </div>
+  </body>
+</html>
