@@ -22,7 +22,8 @@
         height: 520px !important;
       }
 
-      .new-map-btn {
+      .new-map-btn,
+      .dynamic-map-btn {
         padding: 5px 20px;
         font-size: 20px;
         margin: 30px;
@@ -43,8 +44,9 @@
       </div>
     </div>
 
-    <button class="new-map-btn">Add to add new button</button>
-    <!--  -->
+    <button class="new-map-btn">new Map with Iframe</button>
+    <button class="dynamic-map-btn">add dynamic map with google</button>
+    <!-- Try with Iframe -->
     <script>
       function updateMap(location) {
         const mapIframe = document.getElementById("zurichMap");
@@ -75,6 +77,8 @@
       document.querySelector(".new-map-btn").addEventListener("click", () => updateMap("Bandung"));
     </script>
 
+    <!-- Try with Google geo api key -->
+
     <script>
       // Function to fetch the coordinates for a location using Geocoding API
       function getCoordinates(locationName) {
@@ -90,6 +94,8 @@
             if (data.status === "OK" && data.results.length > 0) {
               const location = data.results[0].geometry.location;
               initMap(location);
+            } else {
+              console.log(data);
             }
           })
           .catch((error) => {
@@ -115,11 +121,12 @@
 
       // Call the getCoordinates function with your location name and API key
       const locationName = "Graha Zurich";
-      getCoordinates(locationName);
+      document.querySelector(".dynamic-map-btn").addEventListener("click", () => getCoordinates(locationName));
     </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoX5MCFEzYkbzSxmAJ3wTILdhogHiRejM&callback=initMap"
+    ></script>
   </body>
 </html>
-
-error message is "Error: Unable to retrieve coordinates for the location."
