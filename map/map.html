@@ -21,20 +21,27 @@
       .gmap_iframe {
         height: 520px !important;
       }
+
+      .new-map-btn {
+        padding: 5px 20px;
+        font-size: 20px;
+        margin: 30px;
+      }
     </style>
   </head>
   <body>
     <div class="mapouter">
       <div class="gmap_canvas" id="mapWrapper">
-        <!-- <iframe
+        <iframe
           class="gmap_iframe"
           id="zurichMap"
           width="100%%"
           src="https://maps.google.com/maps?width=550&amp;height=520&amp;hl=en&amp;q=Graha Zurich&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        ></iframe> -->
+        ></iframe>
       </div>
     </div>
 
+    <button class="new-map-btn">Add to add new button</button>
     <!--  -->
     <script>
       function updateMap(location) {
@@ -57,11 +64,13 @@
 
         // const newMap = mapIframe.cloneNode(true);
         const newMap = document.createElement("iframe");
+        newMap.width = "100%";
+        newMap.height = "520";
         newMap.src = `https://maps.google.com/maps?width=550&amp;height=520&amp;hl=en&amp;q=${location}&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed`;
         mapWrapper.appendChild(newMap);
       }
 
-      updateMap("Bandung");
+      document.querySelector(".new-map-btn").addEventListener("click", () => updateMap("Bandung"));
     </script>
   </body>
 </html>
