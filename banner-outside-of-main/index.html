@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .banner__container{
+      position: relative;
+    }
+  </style>
+  <body>
+    <header>header</header>
+    <main>
+      <p>main</p>
+      <div id="main__banner">main__banner</div>
+      <p>ss</p>
+      <p>aa</p>
+    </main>
+    <footer>footer</footer>
+
+    <script>
+      const mainBanner = document.querySelector("#main__banner");
+      const header = document.querySelector("header");
+
+      const newContainer = document.createElement("section");
+      newContainer.className = "banner__container container";
+
+      newContainer.appendChild(mainBanner);
+
+      header.parentNode.insertBefore(newContainer, header.nextSibling);
+    </script>
+  </body>
+</html>
