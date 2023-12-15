@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Script for the slider</title>
+  </head>
+  <body>
+    <section class="community_menu_slider_wrapper">
+      <div class="community_menu_slider">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+          <!-- Final Slider items here -->
+        </div>
+
+        <div class="swiper-pagination" id="swiper-pagination">
+          <!-- Slider Pagination here -->
+        </div>
+
+        <div class="slide-items" id="slide-items">
+          <!-- item 01 -->
+          <div class="community__item">
+            <img src="" alt="zurich" />
+            <div class="text_wrapper">
+              <h3>Fitur New For Old</h3>
+              <p>Peggantian mobil baru yang rusak total karena kecelakaan pada 6 bulan pertama masa pertanggungan.</p>
+            </div>
+          </div>
+          <!-- item 02 -->
+          <div class="community__item">
+            <img src="" alt="zurich" />
+            <div class="text_wrapper">
+              <h3>Fitur New For Old</h3>
+              <p>Peggantian mobil baru yang rusak total karena kecelakaan pada 6 bulan pertama masa pertanggungan.</p>
+            </div>
+          </div>
+          <!-- item 03 -->
+          <div class="community__item">
+            <img src="" alt="zurich" />
+            <div class="text_wrapper">
+              <h3>Fitur New For Old</h3>
+              <p>Peggantian mobil baru yang rusak total karena kecelakaan pada 6 bulan pertama masa pertanggungan.</p>
+            </div>
+          </div>
+          <!-- item 04 -->
+          <div class="community__item">
+            <img src="" alt="zurich" />
+            <div class="text_wrapper">
+              <h3>Fitur New For Old</h3>
+              <p>Peggantian mobil baru yang rusak total karena kecelakaan pada 6 bulan pertama masa pertanggungan.</p>
+            </div>
+          </div>
+          <!-- item 05 -->
+          <div class="community__item">
+            <img src="" alt="zurich" />
+            <div class="text_wrapper">
+              <h3>Fitur New For Old</h3>
+              <p>Peggantian mobil baru yang rusak total karena kecelakaan pada 6 bulan pertama masa pertanggungan.</p>
+            </div>
+          </div>
+          <!-- item 06 -->
+          <div class="community__item">
+            <img src="" alt="zurich" />
+            <div class="text_wrapper">
+              <h3>Fitur New For Old</h3>
+              <p>Peggantian mobil baru yang rusak total karena kecelakaan pada 6 bulan pertama masa pertanggungan.</p>
+            </div>
+          </div>
+          <!-- item 07 -->
+          <div class="community__item">
+            <img src="" alt="zurich" />
+            <div class="text_wrapper">
+              <h3>Fitur New For Old</h3>
+              <p>Peggantian mobil baru yang rusak total karena kecelakaan pada 6 bulan pertama masa pertanggungan.</p>
+            </div>
+          </div>
+          <!-- item 08 -->
+          <div class="community__item">
+            <img src="" alt="zurich" />
+            <div class="text_wrapper">
+              <h3>Fitur New For Old</h3>
+              <p>Peggantian mobil baru yang rusak total karena kecelakaan pada 6 bulan pertama masa pertanggungan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************************************************ -->
+    <!--             Script for the slider                -->
+    <!-- ************************************************ -->
+    <script>
+      (function () {
+        const swiperWrapper = document.getElementById("swiper-wrapper");
+        const getAllItems = document.querySelectorAll("#slide-items .community__item");
+        const isSmallDevice = window.screen.availWidth <= 991;
+        const totalItems = getAllItems.length;
+        const slidePerItem = isSmallDevice ? 3 : 6;
+        const totalSliderItem = Math.ceil(totalItems / slidePerItem);
+
+        for (let i = 0; i < totalSliderItem; i++) {
+          let itemStart = i * slidePerItem;
+          const slideItemElement = document.createElement("div");
+          slideItemElement.className = "swiper-slide";
+
+          // append data items
+          for (let j = itemStart; j < getAllItems.length; j++) {
+            if (getAllItems[j]) slideItemElement.appendChild(getAllItems[j]);
+          }
+
+          // finally it append to main wrapper element
+          swiperWrapper.appendChild(slideItemElement);
+        }
+      })();
+    </script>
+  </body>
+</html>
