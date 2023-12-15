@@ -110,6 +110,17 @@
           // finally it append to main wrapper element
           swiperWrapper.appendChild(slideItemElement);
         }
+
+        // initialize swiper slider
+        var community_slider = new Swiper(".community_menu_slider", {
+          pagination: {
+            el: "#swiper-pagination",
+            clickable: true,
+          },
+          loop: true,
+          spaceBetween: 30,
+          slidesPerView: 1,
+        });
       })();
     </script>
   </body>
